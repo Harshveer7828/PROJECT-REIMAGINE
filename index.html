@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="main" class="w-screen bg-zinc-900">
-        <div class="page1 h-[100vh] w-full bg-zinc-900 relative overflow-hidden">
-            <video id="video"  muted loop src="./km_20240521_1080p_60f_20240521_091752-vmake newwww.mp4" class="h-[100vh] object-cover "></video>
-            <button id="play" class="absolute bg-red-900 text-white px-6 rounded-md py-3 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">EXCITE ME</button>
+    <div id="main" class="w-screen bg-zinc-900 overflow-y-hidden">
+        <div class="loader h-[100vh] w-screen absolute bg-zinc-900 top-0 z-[99] text-white text-3xl flex items-center justify-center flex-col">
+            <div class="load">
+                <span>M</span>
+                <span>U</span>
+                <span>S</span>
+                <span>T</span>
+                <span>A</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+            <button class="btnforvideo bg-white p-2 text-zinc-900 text-xl">Excite me</button>
+        </div>
+
+        <div class="page1 h-[100vh] w-screen bg-zinc-900 relative overflow-hidden">
+            <video id="video" muted loop src="./km_20240521_1080p_60f_20240521_091752-vmake.mp4"
+                class=" absolute top-0 h-[100vh] object-cover w-full left-0 overflow-hidden">
+            </video>
+            
+          
         </div>
     </div>
-    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
