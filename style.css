@@ -10,7 +10,7 @@ html , body{
     width: 100%;
 }
 
-.mainHeadext{
+.fontText{
     font-family: "Bebas Neue";
 }
 
@@ -68,6 +68,14 @@ span {
     animation-delay: 2.2s;
 }
 
+.btnforvideo{
+    box-shadow: 0.5px 0px 50px 1px;
+    border: 0.5px solid rgba(255, 255, 255, 0.347);
+}
 
-
+.btnforvideo:hover{
+    background: white;
+    color: black;
+    transition: all ease-in-out 0.8s;
+}
 

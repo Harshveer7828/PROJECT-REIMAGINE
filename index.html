@@ -7,35 +7,48 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="main" class="w-screen bg-zinc-900 overflow-y-hidden">
-        <div class="loader h-[100vh] w-screen absolute bg-zinc-900 top-0 z-[99] text-white text-3xl flex items-center justify-center flex-col">
-            <div class="load">
-                <span>M</span>
-                <span>U</span>
-                <span>S</span>
-                <span>T</span>
-                <span>A</span>
-                <span>N</span>
-                <span>G</span>
+    <!-- <div
+        class="loader h-[100vh] w-screen absolute bg-zinc-900 top-0 z-[99] text-white text-3xl flex items-center justify-center flex-col">
+        <div class="load">
+            <span>M</span>
+            <span>U</span>
+            <span>S</span>
+            <span>T</span>
+            <span>A</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+        <button class="btnforvideo bg-transparent px-4 py-2 text-white border-white text-xl shadow-white">Excite
+            me
+        </button>
+    </div> -->
+    <div class="hero">
+        <div class="mainpage h-screen w-screen bg-zinc-900">
+            <div class="navbar h-[12vh] w-screen flex items-center justify-between px-12">
+                <h1 class="text-white text-3xl fontText ">Muscle Mustang</h1>
+                <i class="ri-menu-3-line  text-white text-2xl cursor-pointer"></i>
             </div>
-            <button class="btnforvideo bg-white p-2 text-zinc-900 text-xl">Excite me</button>
-        </div>
+            <div class="midText text-left text-white w-fit absolute top-[30%] left-[10%]">
+                <h1 class="text-6xl font-bold">MUSCLE <br> MUSTANG</h1>
+                <p class="w-[80%] mt-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic autem vel adipisci perferendis nihil maxime!</p>
+                <button class="mt-6 border px-6 py-3 font-bold">Discover <i class="ri-arrow-right-up-line"></i></button>
+            </div>
 
-        <div class="page1 h-[100vh] w-screen bg-zinc-900 relative overflow-hidden">
-            <video id="video" muted loop src="./km_20240521_1080p_60f_20240521_091752-vmake.mp4"
-                class=" absolute top-0 h-[100vh] object-cover w-full left-0 overflow-hidden">
-            </video>
-            
-          
         </div>
+        <!-- <video class="lg:h-[100vh] w-[100vw] absolute top-0 left-0 object-cover" id="video" loop muted
+            src="./km_20240521_1080p_60f_20240521_091752-vmake.mp4"></video> -->
     </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
     <script src="script.js"></script>
 </body>
 
